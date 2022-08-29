@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741D5B0328BCE68A0097A5C5 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D5B0228BCE68A0097A5C5 /* DataSource.swift */; };
+		7439AECA28BBA402009D1356 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7439AEC928BBA402009D1356 /* DataModels.swift */; };
 		7476937B28BA48B8006DB8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7476937A28BA48B8006DB8BB /* AppDelegate.swift */; };
 		7476937D28BA48B8006DB8BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7476937C28BA48B8006DB8BB /* SceneDelegate.swift */; };
 		7476937F28BA48B8006DB8BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7476937E28BA48B8006DB8BB /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		741D5B0228BCE68A0097A5C5 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		7439AEC928BBA402009D1356 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		7476937728BA48B8006DB8BB /* weather app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weather app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7476937A28BA48B8006DB8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7476937C28BA48B8006DB8BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				7476937A28BA48B8006DB8BB /* AppDelegate.swift */,
 				7476937C28BA48B8006DB8BB /* SceneDelegate.swift */,
+				7439AEC928BBA402009D1356 /* DataModels.swift */,
 				7476937E28BA48B8006DB8BB /* ViewController.swift */,
+				741D5B0228BCE68A0097A5C5 /* DataSource.swift */,
 				7476938028BA48B8006DB8BB /* Main.storyboard */,
 				7476938328BA48B9006DB8BB /* Assets.xcassets */,
 				7476938528BA48B9006DB8BB /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7476937F28BA48B8006DB8BB /* ViewController.swift in Sources */,
+				7439AECA28BBA402009D1356 /* DataModels.swift in Sources */,
 				7476937B28BA48B8006DB8BB /* AppDelegate.swift in Sources */,
+				741D5B0328BCE68A0097A5C5 /* DataSource.swift in Sources */,
 				7476937D28BA48B8006DB8BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,24 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weather_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_weather" translatesAutoresizingMaskIntoConstraints="NO" id="6Ql-aP-shr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbK-iq-iXd">
+                                <rect key="frame" x="102" y="85" width="210.5" height="57"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="50"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Погодные условия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAK-K0-uyz">
+                                <rect key="frame" x="106" y="150" width="202" height="23"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYx-MD-Nsj">
+                                <rect key="frame" x="54" y="248" width="132.5" height="57"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="50"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZrI-zz-rM9">
+                                <rect key="frame" x="250.5" y="223" width="143.5" height="142"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZrI-zz-rM9" firstAttribute="leading" secondItem="PYx-MD-Nsj" secondAttribute="trailing" constant="64" id="1Ya-HL-qOR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZrI-zz-rM9" secondAttribute="trailing" constant="20" id="2ei-ej-un6"/>
+                            <constraint firstItem="ZrI-zz-rM9" firstAttribute="top" secondItem="gAK-K0-uyz" secondAttribute="bottom" constant="50" id="5bc-eO-rDt"/>
+                            <constraint firstItem="PYx-MD-Nsj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="ByH-BA-5X3"/>
+                            <constraint firstItem="gAK-K0-uyz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FPe-ll-IsZ"/>
+                            <constraint firstItem="6Ql-aP-shr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IvA-ZB-Awu"/>
+                            <constraint firstItem="6Ql-aP-shr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ju4-Yv-gsQ"/>
+                            <constraint firstAttribute="bottom" secondItem="6Ql-aP-shr" secondAttribute="bottom" id="WET-Bl-eMv"/>
+                            <constraint firstItem="gAK-K0-uyz" firstAttribute="top" secondItem="RbK-iq-iXd" secondAttribute="bottom" constant="8" id="f60-Eo-Jex"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ql-aP-shr" secondAttribute="trailing" id="ghH-7u-n8w"/>
+                            <constraint firstItem="RbK-iq-iXd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i07-qs-Jtg"/>
+                            <constraint firstItem="PYx-MD-Nsj" firstAttribute="top" secondItem="gAK-K0-uyz" secondAttribute="bottom" constant="75" id="j7N-oZ-UYz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZrI-zz-rM9" secondAttribute="bottom" constant="497" id="oXT-eE-Re4"/>
+                            <constraint firstItem="RbK-iq-iXd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="yTI-yr-UHn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="RbK-iq-iXd" id="bRZ-h2-zYL"/>
+                        <outlet property="descriptionLabel" destination="gAK-K0-uyz" id="lQp-N0-WuJ"/>
+                        <outlet property="iconImage" destination="ZrI-zz-rM9" id="sMN-Sn-ClO"/>
+                        <outlet property="temperatureLabel" destination="PYx-MD-Nsj" id="DhT-15-S62"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="91.741071428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back_weather" width="750" height="1334"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
